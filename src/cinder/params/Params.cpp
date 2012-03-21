@@ -213,6 +213,11 @@ void InterfaceGl::addParam( const std::string &name, float *param, const std::st
 {
 	implAddParam( name, param, TW_TYPE_FLOAT, optionsStr, readOnly );
 } 
+    
+void InterfaceGl::addParam( const std::string &name, double *param, const std::string &optionsStr, bool readOnly )
+{
+    implAddParam( name, param, TW_TYPE_DOUBLE, optionsStr, readOnly );
+} 
 
 void InterfaceGl::addParam( const std::string &name, int32_t *param, const std::string &optionsStr, bool readOnly )
 {
